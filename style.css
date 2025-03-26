@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+13px&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 5px;
+    font-family: 'Slabo 13px', serif;
+    color: white;
+    font-size: 21px;
+}
+
+body {
+    background-color: #121212;
+}
+
+.home-body * {
+    overflow: hidden;
+    height: 100vh; 
+    width: 100vw; 
+}
+
+body.projects-pages{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;               
+    background-color: #121212;
+}
+
+table.about-table{
+    border: none;
+    position: absolute;     
+    top: 50%;             
+    left: 50%;              
+    transform: translate(-50%, -50%);  
+    border-collapse: collapse;   
+    max-width: 85%;          
+    width: 85%;              
+    padding: 0; 
+    margin-top: 650px;             
+}
+
+table.project-table {
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-collapse: collapse;
+    max-width: 85%;
+    width: 85%;
+    padding: 0;
+    margin-top: 60px;
+}
+
+td {
+    padding: 20px;           
+    vertical-align: top;         
+    text-align: center;
+}
+
+.left-cell {
+    width: 45%;                    
+    height: 100px;                 
+    vertical-align: top;           
+    padding: 20px;     
+    line-height: 2;         
+}
+
+
+.right-cell {
+    width: 55%;                    
+    vertical-align: top;           
+    padding: 20px;   
+    position: relative;           
+}
+
+#about2{
+    position: absolute; 
+    top: 100px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 400px;
+    height: auto;
+}
+
+.about-page{
+    max-width: 400px;            
+    height: auto;                
+    display: block;             
+    margin: 0 auto;             
+}
+
+
+
+.project-image {
+    padding: 10px; 
+}
+
+.projects-page {
+    max-width: 85%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    max-height: 300px;
+}
+
+.projects-page:hover{
+    opacity: 75%;
+    transform: scale(1.1);
+    transform: rotate(-10deg);
+}
+
+
+
+table, th, td {
+    border: none !important;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    align-items: center;
+}
+
+ul li {
+list-style: none;
+padding: 40px;
+display: inline
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 19px;
+}
+
+ul li a:hover {
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.left-option {
+    margin-right: auto;
+}
+
+nav {
+font-size: 13px;
+height: 200px;
+width: 90%;
+align-items: center;
+padding-left:40px;
+padding-right: 40px;
+}
+
+nav a {
+    font-size: 13px;
+}
+
+table, th, td {
+    border: grey 2px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+#intro p{
+    margin-left: 200px;
+    padding-bottom: 20px;
+    font-size: 27px;
+    top: -125px; 
+    display: block;
+}
+
+#intro{
+    display: block;  
+    width: 400px;  
+    margin-top: -250px;
+}
+
+#front-image{
+    display: flex;
+    align-items: center; 
+    margin-top: -6%;
+    width: 290px;
+    height: auto;
+    margin-left: 130px;
+    transform: translateY(-10px);
+}
+
+#linkedin-image{
+    position: absolute;
+    display: inline-block;
+    width: 130px;
+    height: auto;
+    margin-left: 990px;
+    position: relative;
+    top: -400px;
+    clip-path: inset(35px round 90px); 
+}
+
+#github-image{
+    width: 90px;
+    height: auto;
+    clip-path: inset(8px round 90px); 
+    margin-left: 1010px;
+    position: relative;
+    top: -350px;
+}
+
+.clickable-image:hover{
+    opacity: 75%;
+    transform: scale(1.1);
+    transform: rotate(-10deg);
+}
+
+#contact-rectangle{
+  width: 230px; 
+  height: 70px; 
+  background-color: #A0A0A8; 
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 8px;
+  text-align: center; 
+  position: relative;
+  margin-left: 200px;
+  top: -430px;
+}
+
+#contact-rectangle a{
+    text-decoration: none;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;  
+    height: 100%; 
+}
+
+#contact-rectangle:hover{
+    background-color: #0077B5;
+    font-size: 23px;
+    font-weight: bold
+}
+
+.cursor {
+    display: inline-block;
+    transform: scaleY(0.5);
+    transform-origin: bottom;
+    width: 8px;
+    background: white;
+    animation: blink 0.9s infinite;
+  }
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  #text{
+    font-size: 27px;
+    line-height: 1;
+  }
+
+  .word {
+    display: inline-block;
+    min-width: 60px;  
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  #still {
+    display: flex;
+    align-items: center;  
+    justify-content: flex-start; 
+    flex-direction: row;  
+  }
+
+  #work_in_progress p{
+    margin-left: 500px;
+  }
+  
+  /* Contact Form */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.form-group {
+    width: 49%; 
+}
+
+.form-row div {
+    width: 50%; 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; 
+    margin-top: 10px;
+}
+
+
+.form-row label,
+.form-row input {
+    width: 48%; 
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    color: #121212;
+}
+
+#contact-button{
+  width: 230px; 
+  height: 70px; 
+  background-color: #A0A0A8; 
+  color: white;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  border-radius: 8px;
+  text-align: center; 
+  position: relative;
+  cursor: pointer;
+}
+
+#contact-button:hover{
+    background-color: #0077B5;
+    font-size: 23px;
+    font-weight: bold
+}
+
+input::placeholder, textarea::placeholder {
+    color: lightgray;
+}
+
+#first-name, #last-name {
+    width: 90%;
+  }
+
+  #contact-heading {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+label[for="first-name"], label[for="last-name"]  {
+    text-align: center;
+    display: block; 
+    margin-left: 70px;
+}
+
